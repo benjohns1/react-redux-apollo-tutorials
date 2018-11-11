@@ -19,7 +19,7 @@ const LOGIN_MUTATION = gql`
   }
 `
 
-class Login extends Component {
+export default class Login extends Component {
   state = {
     login: true,
     email: '',
@@ -88,5 +88,3 @@ class Login extends Component {
     localStorage.setItem(AUTH_TOKEN, token)
   }
 }
-
-export default Login

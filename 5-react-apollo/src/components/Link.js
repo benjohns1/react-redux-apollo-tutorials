@@ -23,7 +23,7 @@ const VOTE_MUTATION = gql`
   }
 `
 
-class Link extends Component {
+export default class Link extends Component {
   render() {
     const authToken = localStorage.getItem(AUTH_TOKEN)
     return (
@@ -80,5 +80,3 @@ class Link extends Component {
     return 'a moment'
   }
 }
-
-export default Link
