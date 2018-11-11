@@ -1,8 +1,7 @@
 {
   "name": "graphql-prisma-server",
   "scripts": {
-    "start-db": "docker-compose up -d && prisma deploy",
-    "start": "node src/index.js",
+    "start": "docker-compose up -d && prisma deploy && node src/index.js",
     "dev": "npm-run-all --parallel start playground",
     "playground": "graphql playground",
     "prisma": "prisma"
